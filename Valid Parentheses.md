@@ -63,9 +63,9 @@ def solution(s):
     stack = []
 
     for p in s:
-        if not stack or p in paren.keys():
+        if p in paren.keys():
             stack.append(p)
-        elif stack[-1] in paren.keys() and p == paren[stack[-1]]:
+        elif stack and p == paren[stack[-1]]:
             stack.pop()
         else:
             return False
