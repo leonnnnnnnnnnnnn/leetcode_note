@@ -62,3 +62,17 @@ def solution(head, val):
 ```
 
 Time complexity $O(1)$, but $O(n)$ space cpmpleity; it might cause stackoverflow.
+
+Actually, there is no need to create a dummy head, which is similar to problem *Remove Duplicates from Sorted List*.
+
+```python
+def solution(head, val):
+    if not head:
+        return head
+    elif head.val == val:
+        return solution(head.next, val)
+    else:
+        head.next = solution(head.next, val)
+        return head
+```
+

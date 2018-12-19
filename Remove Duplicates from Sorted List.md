@@ -44,11 +44,26 @@ def solution(head):
     if not head or not head.next:
         return dummy.next
     elif head.val == head.next.val:
-        dummy.next = recursion_remove_duplicates(head.next)
+        dummy.next = solution(head.next)
         return dummy.next
     else:
-        head.next = recursion_remove_duplicates(head.next)
+        head.next = solution(head.next)
         return dummy.next
 ```
 
-Time complexity $O(1)$, space complexity $O(n)#, might cause stackoverflow. 
+Time complexity $O(1)$, space complexity $O(n)$, might cause stackoverflow. 
+
+Actually, there is no need to create a dummy head variable.
+
+```python
+def solution(head):
+    if not head or not head.next():
+        return head
+    elif head.val == head.next.val:
+        return solution(head.next)
+    else:
+        head.next = solution(head.next)
+        return head
+```
+
+Beats 99.46% python submissions
