@@ -67,3 +67,14 @@ def solution(head):
 ```
 
 Beats 99.46% python submissions
+
+Less code, more elegent:
+
+```python
+def solution(head):
+    if not head or not head.next:
+        return head
+    head.next = solution(head.next)
+    return head.next if head.val == head.next.val else head
+```
+
