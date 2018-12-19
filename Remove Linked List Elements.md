@@ -76,3 +76,13 @@ def solution(head, val):
         return head
 ```
 
+Even less code:
+
+```python
+def solution(head, val):
+    if not head:
+        return head
+    head.next = solution(head, val)
+    return head.next if head.val == val else head
+```
+
