@@ -56,10 +56,30 @@ def solution(nums):
         i = 0
         for j in range(1, n):
             if nums[i] != nums[j]:
-                nums[i + 1] = nums[j]
+                if i + 1 != j:
+	                nums[i + 1] = nums[j]
                 i += 1
         return i + 1
 ```
 
 Time complexity  $O(n)$. Beats 99.96% python submissions.
+
+```cpp
+int removeDuplicates(vector<int>& nums) {
+        if (nums.empty())
+            return 0;
+        
+        int k = 0;
+        
+        for (int j = 1; j < nums.size(); j++)
+            if (nums[k] != nums[j]){
+                if (k+1 != j)
+                    nums[++k] = nums[j];
+                else
+                    k++;
+            }
+        
+        return k+1;
+    }
+```
 

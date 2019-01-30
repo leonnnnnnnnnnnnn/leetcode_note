@@ -53,7 +53,7 @@ for (int i = 0; i < len; i++) {
 
 ```python
 def solution(nums, val):
-i = 0
+	i = 0
     for j in range(len(nums)):
         if nums[j] != val:
             nums[i] = nums[j]
@@ -78,4 +78,17 @@ def solution(nums, val):
 ```
 
 When we encounter $nums(i)==val$, we swap it with the last element; what if the element swapped element is the $val$, we will handle it in the next iteration since we do not increase $i$ in the last iteration.
+
+## Solution 3: Two pointers engenced v2
+
+```python
+def solution(nums, val):
+	i = 0
+    for j in range(len(nums)):
+        if nums[j] != val:
+            if not i == j:
+            	nums[i] = nums[j]
+            i += 1
+    return i
+```
 
