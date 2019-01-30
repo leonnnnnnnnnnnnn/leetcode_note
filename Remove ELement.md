@@ -61,7 +61,7 @@ def solution(nums, val):
     return i
 ```
 
-## Solution 2: Tow pointers enhenced
+## Solution 2: Tow pointers enhanced
 
 ```python
 def solution(nums, val):
@@ -79,7 +79,7 @@ def solution(nums, val):
 
 When we encounter $nums(i)==val$, we swap it with the last element; what if the element swapped element is the $val$, we will handle it in the next iteration since we do not increase $i$ in the last iteration.
 
-## Solution 3: Two pointers engenced v2
+## Solution 3: Two pointers enhanced v2
 
 ```python
 def solution(nums, val):
