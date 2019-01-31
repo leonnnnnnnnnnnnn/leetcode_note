@@ -33,8 +33,8 @@ def solution(l1, l2):
         else:
             curr.next = l2
             l2 = l2.next
-
         curr = curr.next
+        
     curr.next = l1 or l2
     return dummy.next
 ```
@@ -55,4 +55,4 @@ def solution2(l1, l2):
         return l2
 ```
 
-More elegent than solution1
+More elegant than solution1
