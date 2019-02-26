@@ -50,7 +50,7 @@ Beat 18.73% python submissions... simply reversing the number is not the best so
 
 ```python
 def solution(x):
-    if x // 10 == 0:
+    if x >= 0 and x // 10 == 0:
         return True
 
     if x < 0 or x % 10 == 0:
