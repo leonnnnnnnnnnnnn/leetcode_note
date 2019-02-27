@@ -1,4 +1,4 @@
-# Merge Sorted Array
+# Merge Sorted Array - LC 88
 
 ## Description
 

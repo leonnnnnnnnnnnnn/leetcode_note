@@ -1,4 +1,4 @@
-# Two Sum II
+# Two Sum II - LC 167
 
 ## Description
 

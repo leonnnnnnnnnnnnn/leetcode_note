@@ -1,4 +1,4 @@
-# Sort Colors
+# Sort Colors - LC 75
 
 ## Description
 

@@ -1,4 +1,4 @@
-# Merge Two Sorted Lists
+# Merge Two Sorted Lists - LC 21
 
 ## Description
 

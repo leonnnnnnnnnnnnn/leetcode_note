@@ -1,4 +1,4 @@
-# Add Two Numbers
+# Add Two Numbers - LC 2
 
 ## Description
 

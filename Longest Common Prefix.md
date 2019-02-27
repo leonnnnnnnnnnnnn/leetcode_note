@@ -1,4 +1,4 @@
-# Longest Common Prefix
+# Longest Common Prefix - LC 14
 
 ## Description
 

@@ -1,4 +1,4 @@
-#  Implement strStr()
+#  Implement strStr() - LC 28
 
 ## Description
 

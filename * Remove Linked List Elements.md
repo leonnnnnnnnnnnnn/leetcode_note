@@ -1,4 +1,4 @@
-# Remove Linked List Elements
+# Remove Linked List Elements - LC 203
 
 ## Description
 

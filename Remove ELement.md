@@ -1,4 +1,4 @@
-# Remove ELement
+# Remove ELement - LC 27
 
 ## Description
 

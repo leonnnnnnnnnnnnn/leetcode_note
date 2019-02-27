@@ -1,4 +1,4 @@
-# Top K Frequent Elements
+# Top K Frequent Elements - LC 347
 
 ## Description
 

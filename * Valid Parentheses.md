@@ -1,4 +1,4 @@
-# Valid Parentheses
+# Valid Parentheses - LC 20
 
 ## Description
 

@@ -1,4 +1,4 @@
-# Two Sum
+# Two Sum - LC 1
 
 ## Description
 Given an array of integers, return **indices** of the two numbers such that they add up to a specific target.

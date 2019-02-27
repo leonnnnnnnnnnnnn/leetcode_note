@@ -1,4 +1,4 @@
-# Reverse Pairs - Hard
+# Reverse Pairs - Hard - LC 493
 
 ## Description
 
