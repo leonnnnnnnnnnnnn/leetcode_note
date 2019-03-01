@@ -32,3 +32,19 @@ def solution(nums1, nums2):
     return list(rtn)
 ```
 
+```cpp
+#include <vector>
+#include <set>
+
+vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
+    set<int> record(nums1.begin(), nums1.end());
+    
+    set<int> resultSet;
+    for(auto iter = nums2.begin(); iter != nums2.end(); iter++)
+        if(record.find(*iter) != record.end())
+            resultSet.insert(*iter);
+    
+    return vector<int>(resultSet.begin(), resultSet.end());
+}
+```
+

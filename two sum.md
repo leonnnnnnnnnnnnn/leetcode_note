@@ -34,3 +34,25 @@ def solution(nums, target):
       else:
         complement[target -x ] = i
 ```
+
+```cpp
+#include <vector>
+#invlude <unordered_map>
+
+vector<int> twoSum(vector<int>& nums, int target) {
+    unordered_map<int, int> complement;
+
+    vector<int> res;
+    for(int i = 0; i < nums.size(); i++)
+        if(complement.find(nums[i]) != complement.end()) {
+            res.push_back(complement[nums[i]]);
+            res.push_back(i);
+            break;
+        }
+        else 
+            complement.insert(pair<int, int>(target - nums[i], i));
+
+    return res;
+}
+```
+
