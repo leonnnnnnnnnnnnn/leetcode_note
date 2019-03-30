@@ -50,5 +50,5 @@ int minimumTotal(vector<vector<int>>& triangle) {
 }
 ```
 
-T(n)=O(n^2)$, $S(n)=O(1)$. Top-down DP.
+$T(n)=O(n^2)$, $S(n)=O(1)$. Top-down DP.
 
