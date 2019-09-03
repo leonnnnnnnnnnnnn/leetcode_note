@@ -19,6 +19,26 @@ If you have figured out the O(*n*) solution, try coding another solution using t
 
 ## Solution 1: $O(n)$
 
+```cpp
+class Solution {
+  public:
+  	int maxSubArray(vector<int>& nums) {
+      int cumSum = 0;
+      int maxSum = nums[0];
+      
+      for(int x : nums) {
+        cumSum += x;
+        maxSum = max(cumSum, maxSum);
+        cumSum = max(cumSum, 0);
+      }
+      
+      return maxSum;
+    }
+}
+```
+
+
+
 ```python
 def solution(nums):
     result = nums[0]
@@ -38,7 +58,7 @@ Another $O(n)$ solution:
 def solution(nums):
     prev_sub = max_sub = nums[0]
     for i in range(1, len(nums)):
-        prev_sub += nums[i] + max(0, prev_sub)
+        prev_sub = nums[i] + max(0, prev_sub)
         max_sub = prev_sub if prev_sub > max_sub else max_sub
     return max_sub
 ```
